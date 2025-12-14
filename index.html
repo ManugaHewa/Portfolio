@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+
+    <title>Manuga Hewa Pathirana | Full‑Stack Engineer</title>
+    <meta
+      name="description"
+      content="Full‑stack engineer building fast, accessible web and mobile products with TypeScript, React, Node.js, and production-grade DevOps."
+    />
+
+    <!-- Open Graph / link previews -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Manuga Hewa Pathirana | Full‑Stack Engineer" />
+    <meta
+      property="og:description"
+      content="Shipping polished products with TypeScript, React, Node.js, and production-grade delivery."
+    />
+    <meta property="og:url" content="https://manugahewa.github.io/Portfolio/" />
+    <!-- Placeholder: add a real image at /assets/og.png later -->
+    <meta property="og:image" content="https://manugahewa.github.io/Portfolio/assets/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Manuga Hewa Pathirana | Full‑Stack Engineer" />
+    <meta
+      name="twitter:description"
+      content="Shipping polished products with TypeScript, React, Node.js, and production-grade delivery."
+    />
+    <meta name="twitter:image" content="https://manugahewa.github.io/Portfolio/assets/og.png" />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Scroll progress (JS updates width) -->
+    <div class="scroll-progress" aria-hidden="true">
+      <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+
+    <header class="site-header" id="top">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand-mark">NG</span>
+          <span class="brand-text">NorthGrid</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          Menu
+        </button>
+
+        <div class="nav-links" id="navLinks" role="navigation" aria-label="Primary">
+          <a class="nav-link is-active" href="#about">About</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <span class="nav-indicator" id="navIndicator" aria-hidden="true"></span>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-label="Hero">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="orb orb-a"></div>
+          <div class="orb orb-b"></div>
+          <div class="orb orb-c"></div>
+          <div class="grid"></div>
+        </div>
+
+        <div class="container hero-inner">
+          <div class="hero-frame" id="heroFrame">
+            <div class="hero-copy">
+              <p class="kicker reveal hero-stagger" data-stagger="0">
+                Full-stack engineer · TypeScript · React · Node
+              </p>
+
+              <h1 class="hero-title reveal hero-stagger" data-stagger="1">
+                Shipping fast, polished products that feel real.
+              </h1>
+
+              <p class="hero-subtitle reveal hero-stagger" data-stagger="2">
+                Product-grade web + mobile experiences with clean architecture, lean APIs,
+                and guardrails for quality.
+              </p>
+
+              <div class="hero-actions reveal hero-stagger" data-stagger="3">
+                <a class="btn btn-primary" href="#projects" id="ctaProjects">See the work</a>
+                <a class="btn btn-ghost" href="#contact">Start a project</a>
+              </div>
+
+              <div class="hero-meta reveal hero-stagger" data-stagger="4" aria-label="Quick links">
+                <a class="chip" href="https://github.com/ManugaHewa" target="_blank" rel="noreferrer"
+                  >GitHub</a
+                >
+                <a
+                  class="chip"
+                  href="https://www.linkedin.com/in/manugahewa"
+                  target="_blank"
+                  rel="noreferrer"
+                  >LinkedIn</a
+                >
+                <span class="chip chip-muted">Milton, ON</span>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal hero-stagger" data-stagger="5" aria-hidden="true">
+              <div class="hero-photo">
+                <div class="hero-photo-ring"></div>
+                <div class="hero-photo-inner">MH</div>
+              </div>
+
+              <div class="hero-note">
+                <span class="dot"></span>
+                Launch-ready builds with tests, CI, and smooth UX.
+              </div>
+
+              <div class="hero-stat">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">end-to-end features shipped</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Impact strip -->
+          <section class="impact-strip reveal" aria-label="Impact highlights">
+            <div class="impact-grid">
+              <div class="impact-item">
+                <div class="impact-title">Delivery speed</div>
+                <div class="impact-value">~30% faster release cycles</div>
+                <div class="impact-note">via test automation + CI guardrails</div>
+              </div>
+              <div class="impact-item">
+                <div class="impact-title">Reliability</div>
+                <div class="impact-value">Idempotent CSV import</div>
+                <div class="impact-note">safe upserts + validation to prevent duplicates</div>
+              </div>
+              <div class="impact-item">
+                <div class="impact-title">Real-time UX</div>
+                <div class="impact-value">Live dashboard feedback</div>
+                <div class="impact-note">WebSocket progress + status updates</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="section container" id="about">
+        <div class="section-head">
+          <h2 class="section-title reveal">What I build</h2>
+          <p class="section-subtitle reveal">
+            Fewer words, more signal: systems that are reliable, fast, and pleasant to use.
+          </p>
+        </div>
+
+        <div class="about-skills-grid">
+          <div class="about-grid">
+            <div class="panel reveal">
+              <h3>Product</h3>
+              <p>UI kits, flows, and micro-interactions designed to feel intentional and responsive.</p>
+            </div>
+
+            <div class="panel reveal">
+              <h3>Engineering</h3>
+              <p>Typed APIs, auth, validation, testing, and observability with pragmatic cloud infra.</p>
+            </div>
+
+            <div class="panel panel-delivery reveal">
+              <h3>Delivery</h3>
+              <p>CI/CD, Dockerized environments, and docs so teams can iterate without friction.</p>
+            </div>
+          </div>
+
+          <div class="skills-embed" id="skills">
+            <div class="skills-network reveal" id="skillsNetwork">
+              <div class="skills-label">Current skill graph</div>
+              <canvas id="skillsCanvas" aria-hidden="true"></canvas>
+              <div
+                class="skills-tooltip"
+                id="skillsTooltip"
+                role="tooltip"
+                aria-hidden="true"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="projects">
+        <div class="section-head">
+          <h2 class="section-title reveal">Featured projects</h2>
+          <p class="section-subtitle reveal">
+            A few highlights — each opens a quick snapshot with deep details, screenshots, and links.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article
+            class="project-card reveal"
+            data-project="dms"
+            tabindex="0"
+            role="button"
+            aria-label="Open Donation Management System details"
+          >
+            <div
+              class="project-thumb"
+              style="
+                background-image: url(https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=800&q=80);
+              "
+            ></div>
+            <div class="project-content">
+              <div class="project-top">
+                <h3>Donation Management System (DMS)</h3>
+                <p class="project-meta">TypeScript monorepo · Prisma/Postgres · React · Docker</p>
+              </div>
+              <p class="project-desc">
+                Real donation ops: multi-channel recording, validation workflow, receipts, reporting, and auditability.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Node</span><span class="tag">Express</span><span class="tag">Prisma</span>
+                <span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">Docker</span>
+              </div>
+              <div class="project-links">
+                <a
+                  class="link"
+                  href="https://github.com/ManugaHewa/DonationManagamentSystem-DMS-/tree/Test"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub →</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="project-card reveal"
+            data-project="exercise"
+            tabindex="0"
+            role="button"
+            aria-label="Open Exercise Prescription App details"
+          >
+            <div
+              class="project-thumb"
+              style="
+                background-image: url(https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80);
+              "
+            ></div>
+            <div class="project-content">
+              <div class="project-top">
+                <h3>Exercise Prescription App</h3>
+                <p class="project-meta">React Native · Node/Express · Video · Notifications</p>
+              </div>
+              <p class="project-desc">
+                Hand-therapy companion: record/upload videos, reminders, subtitles, and progress tracking across iOS/Android.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React Native</span><span class="tag">TypeScript</span><span class="tag">GCP</span>
+                <span class="tag">Video</span><span class="tag">Notifications</span>
+              </div>
+              <div class="project-links">
+                <a
+                  class="link"
+                  href="https://github.com/ManugaHewa/Exercise-Prescription-App_CAPSTONE/tree/main/Exercise-Prescription-App-Front-End-main"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Frontend →</a
+                >
+                <a
+                  class="link"
+                  href="https://github.com/ManugaHewa/Exercise-Prescription-App_CAPSTONE/tree/main/Exercise-Prescription-App-Back-End-main"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Backend →</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="project-card reveal"
+            data-project="alice"
+            tabindex="0"
+            role="button"
+            aria-label="Open Alice in Brussels details"
+          >
+            <div
+              class="project-thumb"
+              style="
+                background-image: url(https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80);
+              "
+            ></div>
+            <div class="project-content">
+              <div class="project-top">
+                <h3>Alice in Brussels</h3>
+                <p class="project-meta">Interactive exhibition · Performance · Accessibility</p>
+              </div>
+              <p class="project-desc">
+                Immersive museum-style site with layered overlays, guided exploration, and fast, accessible delivery.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <span class="link muted">Work sample available on request</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="contact">
+        <div class="section-head">
+          <h2 class="section-title reveal">Contact</h2>
+          <p class="section-subtitle reveal">Want a fast MVP, a reliable backend, or a polished UI?</p>
+        </div>
+
+        <div class="contact-grid">
+          <a class="panel reveal contact-card" href="mailto:Manugaginodh2@gmail.com">
+            <h3>Email</h3>
+            <p class="muted">Manugaginodh2@gmail.com</p>
+          </a>
+
+          <a class="panel reveal contact-card" href="https://github.com/ManugaHewa" target="_blank" rel="noreferrer">
+            <h3>GitHub</h3>
+            <p class="muted">github.com/ManugaHewa</p>
+          </a>
+
+          <a
+            class="panel reveal contact-card"
+            href="https://www.linkedin.com/in/manugahewa"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h3>LinkedIn</h3>
+            <p class="muted">/in/manugahewa</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Project modal -->
+    <div
+      class="modal"
+      id="projectModal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Project details"
+    >
+      <div class="modal-backdrop" id="modalBackdrop"></div>
+
+      <div class="modal-card" role="document" aria-live="polite">
+        <button class="modal-close" id="modalClose" aria-label="Close project details">Close</button>
+        <div class="modal-body" id="modalBody"></div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
